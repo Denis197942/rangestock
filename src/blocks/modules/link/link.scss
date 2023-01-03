@@ -1,0 +1,205 @@
+.link {
+    width: 100%;
+    min-height: 878px;
+    background-image: url(/img/link/blueLeft.png);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    &__title {
+        width: 1233px;
+        height: 170px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 85px;
+        text-align: center;
+        margin: 65px auto;
+        color: #000;
+        span {
+            color: #3A87FE;
+        }
+    }
+    &__wrapper {
+        width: 900px;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+    }
+    &__wrap {
+        width: 238px;
+        margin-right: 80px;
+    }
+    &__inner {
+        width: 266px;
+        height: 58px;   
+        display: flex;
+        margin-top: 10px;
+        &_last {
+            width: 361px;
+        }
+    }
+    &__num {
+        width: 51px;
+        height: 51px;
+        border-radius: 100%;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 6px;
+        &_one {
+            background: #FF9B00;
+        }
+        &_two {
+            background: #76BB40;
+        }
+        &_three {
+            background: #3A87FE;
+        }
+    }
+    &__text {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin: 0;
+        margin-left: 25px;
+    }
+    &__arrow {
+        margin-right: -13.5px;
+    }
+    &__subtitle {
+        width: 1065px;
+        height: 78px;
+        background: #FFAB01;
+        border-radius: 50px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 15px auto 75px;
+        padding-top: 18px;
+    }
+}
+
+@media(max-width: 1390px) {
+    .link {
+        &__title {
+            width: 1116px;
+        }
+    }
+}
+
+@media(max-width: 1265px) {
+    .link {
+        &__title {
+            width: 900px;
+            height: 75px;
+            font-size: 50px;
+            line-height: 55px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__subtitle {
+            margin-top: 75px;   
+            width: 600px;
+            height: 120px;
+        }
+    }
+}
+
+@media(max-width: 1070px) {
+    .link {
+        background-image:none;
+    }
+}
+
+@media(max-width: 865px) {
+    .link {
+        &__title {
+            width: 496px;
+            height: 15px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 850px;
+            height: 428px;
+        }
+        &__arrow {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .link {
+        &__wrapper {
+            width: 350px;
+            height: 428px;
+        }
+        &__subtitle {
+            margin-top: 31px;
+            margin-bottom: 20px;
+            width: 358px;
+            height: 84px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media(max-width: 510px) {
+    .link {
+        &__title {
+            width: 392px;
+            height: 45px;
+            
+        }
+    }
+}
+
+@media(max-width: 370px) {
+    .link {
+        &__title {
+            width: 305px;
+            height: 32px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__wrap {
+            margin-right: 0;
+            width: 300px;
+        }
+        &__num {
+            margin: 0 auto;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 17px;
+        }
+        &__subtitle {
+            font-size: 15px;
+            line-height: 17px;
+            width: 270px;
+            height: 63px;
+        }
+        &__inner_last {
+            width: 300px;
+        }
+    }
+}
