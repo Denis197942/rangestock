@@ -1,0 +1,114 @@
+.option {
+    width: 100%;
+    min-height: 1500px;
+    background-image: url(/img/option/yellow.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &__title {
+        width: 740px;
+        height: 85px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 85px;
+        text-align: center;
+        color: #000000;
+        margin: 0 auto 10px;
+    }
+    &__wrapper {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__wrap {
+        margin-top: 80px;
+        margin-right: 40px;
+        // margin-bottom: 80px;
+
+    }
+    &__subtitle {
+        width: 266px;
+        height: 146px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        margin-top: 39px;
+        margin-bottom: 111px;
+    }
+    &__text {
+        width: 325px;
+        height: 270px;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 27px;
+        color: #000000;
+    }
+}
+
+@media (max-width: 910px) {
+    .option {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .option {
+        background-image: none;
+        &__title {
+            width: 698px;
+            height: 36px;
+            font-size: 50px;
+            line-height: none;
+        }
+        &__wrap {
+            margin-top: 30px;
+            margin-right: 0;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .option {
+        &__title {
+            width: 256px;
+            height: 73px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__wrap {
+            margin-top: 10px;
+            margin-right: 0;
+        }
+        &__subtitle {
+            width: 266px;
+            height: 58px;
+            font-family: "Proxima Nova";
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 17px;
+            width: 90%;
+            height: 140px;
+        }
+        &__image svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
