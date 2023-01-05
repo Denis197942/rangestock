@@ -1,0 +1,19 @@
+.footer {
+    &__text {
+        margin-top: 63px;
+        font-family: 'Arial Unicode MS';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+@media(max-width: 700px) {
+    .footer {
+        &__text {
+            margin-top: 20px;  
+        }
+    }
+}
