@@ -1,13 +1,9 @@
-modules.define('questions', ['i-bem-dom'], function(provide, bemDom) {
+let plus = document.querySelectorAll('.questions__plus'),
+    answer = document.querySelectorAll('.questions__answer');
+    console.log(plus);
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
+for (let i = 0; i < plus.length; i++) {
+    plus[i].addEventListener('click', function() {
+        answer[i].style.display = 'block';
+    });
+}
